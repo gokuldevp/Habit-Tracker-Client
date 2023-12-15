@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    }
+    
+.addHabits {
+    width: 90vw;
+    height: 80vh;
+
+    margin: 4vh 4vw;
+    padding: 1rem;
+    background-color: aquamarine;
+    color: black;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90vw;
+    height: 70vh;
+    margin: auto;
+  }
+
+.form_item {
+    margin-bottom: 3vh;
+  }
+
+.form_item label {
+    width: 7vw;
+    font-size: large;
+    display: block;
+    text-align: left;
+}
+.form_item input {
+    width: 90vw;
+    height: 5vh;
+}
+
+.form button {
+    margin-top:5vh;
+    height:5vh;
+    border-radius: 10px;
+}

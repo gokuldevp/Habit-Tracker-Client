@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    }
+    
+.weekBox {
+    width: 90vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vh 4vw;
+    padding: 1rem;
+    background-color: aquamarine;
+    color: black;
+}
+
+.weekBox div{
+    width: 150px;
+    text-align: left;
+}
+
+.weekBox:hover {
+    color: aliceblue;
+}
+
