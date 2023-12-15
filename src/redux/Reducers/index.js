@@ -1,5 +1,10 @@
+import { combineReducers } from 'redux';
 import habitsReducer from "./habits";
+import navReducer from "./navReducer"; 
 
-export {
-    habitsReducer
-}
+const rootReducer = combineReducers({
+  habits: habitsReducer,
+  nav: navReducer
+});
+
+export default rootReducer;
