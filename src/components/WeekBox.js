@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../styles/WeekBox.module.css';
+// import {}
 
 function WeekBox(props) {
   const { day } = props;
 
   return (
-    <Link to={`/habit/daily/${day[0]}`} className={styles.weekBoxLink}>
+    <Link to={`/habit/daily/${day[1]}`} className={styles.weekBoxLink}>
       <div className={styles.weekBox} style={{ backgroundColor: day[2] }}>
         <div>
           <h3>{day[1]}</h3>
@@ -17,7 +18,7 @@ function WeekBox(props) {
         </div>
 
         <div>
-          <h3>Status: </h3>
+          <h3>Status: Complete</h3>
         </div>
       </div>
     </Link>

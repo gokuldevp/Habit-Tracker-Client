@@ -1,11 +1,12 @@
+// App.js
 import { Route, Routes } from 'react-router-dom';
 import { NavBar } from './';
 import { AddHabits, DailyView, WeekView } from '../pages';
 import '../styles/App.css';
 
 function App() {
+
   return (
-    // <Router>
     <div className="App">
       <NavBar />
       <Routes>

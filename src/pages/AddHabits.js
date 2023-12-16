@@ -2,6 +2,7 @@ import styles from '../styles/AddHabits.module.css';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addHabit } from '../redux/actions/habits';
+// import { getLast7Days } from '../utils/handleDate';
 
 function AddHabits() {
   const dispatch = useDispatch();
@@ -12,24 +13,26 @@ function AddHabits() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    // Assuming you have a unique way to identify habits, use that as an ID
-    const newHabit = {
-      id: Date.now(),  // You might want to use a more robust ID generation method
-      name: habitData.name,
-      time: habitData.time,
-      status: 'None',  // Default status when adding a new habit
-    };
-
-    // Dispatch the addHabit action
-    dispatch(addHabit(newHabit));
-
+    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    for (let i of daysOfWeek) {
+      console.log(i)
+      const newHabit = {
+        id: i+Date.now(),
+        name: habitData.name,
+        time: habitData.time,
+        status: 'None',
+        day: i,
+      };
+      dispatch(addHabit(newHabit));
+    }
+  
     // Clear the form after submitting
     setHabitData({
       name: '',
       time: '',
     });
   };
+  
 
   const handleChange = (e) => {
     setHabitData({

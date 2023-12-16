@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    }
+    
+.dailyBox {
+    width: 90vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vh 4vw;
+    padding: 1rem;
+    background-color: aquamarine;
+    color: black;
+}
+
+.dailyBox div{
+    width: 150px;
+    text-align: left;
+}
+
+.dailyBox:hover {
+    color: aliceblue;
+}
+
+.dailyBoxLink{
+    text-decoration: none;
+}
