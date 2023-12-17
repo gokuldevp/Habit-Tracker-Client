@@ -34,7 +34,7 @@ habit-tracker-app
 │   ├── WeekView.js
 │   └── index.js
 ├── redux
-│   ├── Reducers
+│   ├── Reducer
 │   │   ├── habits.js
 │   │   ├── navReducer.js
 │   │   └── index.js
@@ -89,4 +89,4 @@ http://localhost:3000
 * CSS Modules
 
 ## Deployed Link
-Please find the deployed app [Habit Tracker React App](https://habit-tracker-react-app-2i74.onrender.com)
+Please find the deployed app [Habit Tracker React App](https://aesthetic-bavarois-de14d5.netlify.app)
