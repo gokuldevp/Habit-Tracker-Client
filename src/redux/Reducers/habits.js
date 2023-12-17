@@ -1,6 +1,7 @@
 // src/redux/reducers/habits.js
+
 import { habitsActions } from "../actions";
-const { ADD_HABIT, UPDATE_STATUS} = habitsActions;
+const { ADD_HABIT, UPDATE_STATUS } = habitsActions;
 
 // Initial state for the habits reducer
 const initialState = {
@@ -17,6 +18,7 @@ const habitsReducer = (state = initialState, action) => {
         habits: [...state.habits, action.payload],
       };
 
+    // Action to update the status of a habit
     case UPDATE_STATUS:
       const { habitId, newStatus } = action.payload;
       return {
@@ -27,6 +29,7 @@ const habitsReducer = (state = initialState, action) => {
       };
 
     default:
+      // Return the current state if the action type doesn't match
       return state;
   }
 };

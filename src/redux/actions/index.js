@@ -1,6 +1,10 @@
 // Import all actions from different files
+
+// Import habits actions
 import * as habitsActions from './habits';
-import * as navActions from './navActions'; // Add this line
+
+// Import nav actions
+import * as navActions from './navActions';
 
 export {
   habitsActions,

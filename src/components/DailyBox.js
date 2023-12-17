@@ -3,17 +3,25 @@ import styles from '../styles/DailyBox.module.css';
 import { useDispatch } from 'react-redux';
 import { updateStatus } from '../redux/actions/habits';
 
+
 function DailyBox(props) {
+  // Destructuring props
   const { habit } = props;
+
+  // State hook to manage the selected status
   const [selectedStatus, setSelectedStatus] = useState(habit.status);
+
+  // Redux dispatch hook to dispatch the updateStatus action
   const dispatch = useDispatch();
 
+  // Event handler for status change
   const handleStatusChange = (e) => {
     const newStatus = e.target.value;
     setSelectedStatus(newStatus);
     dispatch(updateStatus(habit.id, newStatus));
   };
 
+  // Rendered component structure
   return (
     <div className={styles.dailyBox}>
       <div>
@@ -37,4 +45,5 @@ function DailyBox(props) {
   );
 }
 
+// Export the component as the default export
 export default DailyBox;

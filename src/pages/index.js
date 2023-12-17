@@ -1,9 +1,7 @@
-import AddHabits from "./AddHabits";
-import WeekView from "./WeekView";
-import DailyView from "./DayView";
+// Importing components for export
+import AddHabits from './AddHabits';
+import WeekView from './WeekView';
+import DailyView from './DayView';
 
-export {
-    AddHabits,
-    DailyView,
-    WeekView
-};
+// Exporting the components
+export { AddHabits, DailyView, WeekView };

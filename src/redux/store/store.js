@@ -1,5 +1,41 @@
+// src/redux/store/store.js
+
 import { createStore } from 'redux';
-import rootReducer from '../Reducers';
+import rootReducer from '../reducers'; 
+import { addHabit } from '../actions/habits';
+
+// Create the Redux store with the root reducer
 const store = createStore(rootReducer);
 
-export default store
+// Define the days of the week
+const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+// Loop through the days of the week to add default habits
+for (let i of daysOfWeek) {
+  // Create a new habit for working out
+  const newHabit1 = {
+    id: i + Date.now()+1,
+    name: "Work Out",
+    time: "08:00",
+    status: 'None',
+    day: i,
+  };
+  
+  // Dispatch the action to add the habit to the store
+  store.dispatch(addHabit(newHabit1));
+
+  // Create a new habit for sleeping
+  const newHabit2 = {
+    id: i + Date.now()+2,
+    name: "Sleep",
+    time: "22:00",
+    status: 'None',
+    day: i,
+  };
+
+  // Dispatch the action to add the habit to the store
+  store.dispatch(addHabit(newHabit2));
+}
+
+// Export the store to make it available for the rest of the application
+export default store;
