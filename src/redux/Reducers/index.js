@@ -10,4 +10,4 @@ const rootReducer = combineReducers({
   nav: navReducer,
 });
 
-export default rootReducer;
+export {rootReducer} ;
