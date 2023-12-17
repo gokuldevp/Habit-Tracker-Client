@@ -2,7 +2,6 @@ import styles from '../styles/AddHabits.module.css';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addHabit } from '../redux/actions/habits';
-// import { getLast7Days } from '../utils/handleDate';
 
 function AddHabits() {
   const dispatch = useDispatch();

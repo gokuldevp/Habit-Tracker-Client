@@ -17,7 +17,7 @@ const getLast7Days = () => {
     last7Days.push([formattedDate, dayOfWeek, colorOfWeek]);
   }
 
-  return last7Days.reverse(); // Reverse the array to maintain the correct chronological order
+  return last7Days.reverse();
 };
 
 export {

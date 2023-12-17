@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from '../styles/WeekBox.module.css';
-// import {}
 
 function WeekBox(props) {
   const { day } = props;
@@ -18,7 +17,6 @@ function WeekBox(props) {
         </div>
 
         <div>
-          <h3>Status: Complete</h3>
         </div>
       </div>
     </Link>

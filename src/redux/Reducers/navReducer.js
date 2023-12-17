@@ -12,7 +12,6 @@ const navReducer = (state = initialState, action) => {
         ...state,
         showAddButton: action.payload,
       };
-    // Add other cases if needed
     default:
       return state;
   }
