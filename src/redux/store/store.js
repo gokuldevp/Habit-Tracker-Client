@@ -1,6 +1,6 @@
 // src/redux/store/store.js
 import { createStore } from 'redux';
-import {rootReducer} from "../reducers/index.js";
+import {rootReducer} from "../reducers";
 import { habitsActions } from '../actions';
 const {addHabit} = habitsActions;
 
