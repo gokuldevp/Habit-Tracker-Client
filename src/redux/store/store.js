@@ -1,8 +1,9 @@
 // src/redux/store/store.js
 
 import { createStore } from 'redux';
-import rootReducer from '../reducers/index'; 
-import { addHabit } from '../actions/habits';
+import rootReducer from '../reducers/rootReducer'; 
+import { habitsActions } from '../actions';
+const {addHabit} = habitsActions;
 
 // Create the Redux store with the root reducer
 const store = createStore(rootReducer);
