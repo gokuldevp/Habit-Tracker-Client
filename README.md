@@ -52,8 +52,9 @@ habit-tracker-app
 │   ├── WeekBox.module.css
 │   └── index.css
 ├── utils
-│   ├── handleDate.js
-│   └── index.js
+│   └── handleDate.js
+│    
+├── index.js
 ├── .gitignore
 ├── README.md
 ├── package-lock.json
