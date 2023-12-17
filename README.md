@@ -53,7 +53,6 @@ habit-tracker-app
 │   └── index.css
 ├── utils
 │   └── handleDate.js
-│    
 ├── index.js
 ├── .gitignore
 ├── README.md
