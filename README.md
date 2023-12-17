@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Habit Tracker App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Habit Tracker App is a web application designed to help users manage and track their daily habits. Whether it's exercise, reading, or any other routine, this app provides a convenient way to monitor and stay on top of your habits.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Deployed Link](#deployed-link)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Week View:** Visualize your habits for the entire week.
+- **Daily View:** View and manage habits for each day.
+- **Add Habits:** Easily add new habits with name, time, and day.
+- **Status Update:** Update the status of your habits (Done, Not done, None).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+```plaintext
+habit-tracker-app
+├── components
+│   ├── App.js
+│   ├── DailyBox.js
+│   ├── NavBar.js
+│   ├── WeekBox.js
+│   └── index.js
+├── pages
+│   ├── AddHabits.js
+│   ├── DayView.js
+│   ├── WeekView.js
+│   └── index.js
+├── redux
+│   ├── Reducers
+│   │   ├── habits.js
+│   │   ├── navReducer.js
+│   │   └── index.js
+│   ├── actions
+│   │   ├── habits.js
+│   │   ├── navActions.js
+│   │   └── index.js
+│   ├── store
+│   │   └── store.js
+├── styles
+│   ├── AddHabits.module.css
+│   ├── App.css
+│   ├── DailyBox.module.css
+│   ├── NavBar.module.css
+│   ├── WeekBox.module.css
+│   └── index.css
+├── utils
+│   ├── handleDate.js
+│   └── index.js
+├── .gitignore
+├── README.md
+├── package-lock.json
+└── package.json
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
+1. Clone the repository
+```cd
+git clone https://github.com/gokuldevp/Habit-Tracker-Client.git
+```
 
-### `npm run build`
+2. Install dependencies
+```
+cd habit-tracker-app
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
+1. Start the development serve
+```
+npm start
+```
+2. Open the application in your browser
+```
+http://localhost:3000
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
+* React
+* Redux
+* React Router
+* CSS Modules
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Deployed Link
+Please find the deployed app [Habit Tracker React App](https://habit-tracker-react-app-2i74.onrender.com)
