@@ -1,4 +1,4 @@
-// src/redux/reducers/rootReducer.js
+// src/redux/reducers/index.js
 
 import { combineReducers } from 'redux';
 import habitsReducer from "./habitsReducer";
