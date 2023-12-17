@@ -1,9 +1,16 @@
 // src/redux/store/store.js
-
-import { createStore } from 'redux';
-import rootReducer from '../reducers/rootReducer'; 
+import habitsReducer from "../reducers/habitsReducer";
+import navReducer from "../reducers/navReducer"; 
+import { createStore, combineReducers } from 'redux';
+// import rootReducer from '../reducers/rootReducer'; 
 import { habitsActions } from '../actions';
 const {addHabit} = habitsActions;
+
+// Combine multiple reducers into a single rootReducer
+const rootReducer = combineReducers({
+  habits: habitsReducer,
+  nav: navReducer,
+});
 
 // Create the Redux store with the root reducer
 const store = createStore(rootReducer);
