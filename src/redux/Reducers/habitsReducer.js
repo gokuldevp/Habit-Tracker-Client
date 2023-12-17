@@ -1,4 +1,4 @@
-// src/redux/reducers/habits.js
+// src/redux/reducers/habitsReducer.js
 
 import { habitsActions } from "../actions";
 const { ADD_HABIT, UPDATE_STATUS } = habitsActions;
